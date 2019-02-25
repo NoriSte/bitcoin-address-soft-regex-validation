@@ -5,7 +5,7 @@
 * @param {boolean=true} mainnet If you want to check a Mainnet or Testnet address
 * @returns {boolean}
 */
-const isValidBitcoinAddress = (address, mainnet) => {
+const isValidBitcoinAddress = (address, mainnet=true) => {
     // @see http://mokagio.github.io/tech-journal/2014/11/21/regex-bitcoin.html
     // @see https://stackoverflow.com/a/48643915
     // mixed together here https://regex101.com/r/v0g6bv/1
