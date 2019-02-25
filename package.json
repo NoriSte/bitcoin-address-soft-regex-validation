@@ -11,5 +11,8 @@
   },
   "scripts": {
     "test": "jest"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.3"
   }
 }
