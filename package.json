@@ -1,0 +1,15 @@
+{
+  "name": "bitcoin-address-soft-regex-validation",
+  "version": "1.0.0",
+  "description": "A single-function package to performa soft (no checksum) bitcoin address (Base58 and Bech32) validation",
+  "main": "index.js",
+  "repository": "https://github.com/NoriSte/bitcoin-address-soft-regex-validation.git",
+  "author": "Stefano Magni <nori.ste.magni@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^24.1.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
