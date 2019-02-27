@@ -23,3 +23,5 @@ Remember that it's not so important if some false positives pass the validation 
 It's bases on some resources like [this one](http://mokagio.github.io/tech-journal/2014/11/21/regex-bitcoin.html), [this one](https://stackoverflow.com/a/48643915) and mixed together on [Regex101](https://regex101.com/r/v0g6bv/1).
 
 It has no dependencies and it's a single-function package, check the `index.js` file to copy the code and avoid adding one more dependency if you want.
+
+Last but not least: it's written in TypeScript.
