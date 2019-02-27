@@ -9,20 +9,17 @@ Performs a soft (syntactically-only) validation of Bitcoin address (both Base58 
 npm install --save bitcoin-address-soft-regex-validation
 ```
 ```javascript
-const isValidBitcoinAddress = require("bitcoin-address-soft-regex-validation");
+const {isValidBitcoinAddress} = require("bitcoin-address-soft-regex-validation");
 // a mainnet address
-isValidBitcoinAddress("1JDknRvZTi5XdhQB3cgvJ9R8aogUvfbYUB"); // true
+isValidBitcoinAddress("1JDknRvZTi5XdhQB3cgvJ9R8aogUvfbYUB"); // "mainnet"
 // a testnet address
-isValidBitcoinAddress("tb1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq", false); // true
+isValidBitcoinAddress("tb1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq"); // "testnet"
+// an invalid address
+isValidBitcoinAddress("fake-address"); // undefined
 ```
-
-It takes two parameters:
-
-- the address itself
-- a boolean (default to `true`) to switch from Mainnet addresses check to Testnet addresses check
 
 Remember that it's not so important if some false positives pass the validation (as said above, it takes for granted that a serious validation is made elsewhere), the only important thing is that no one valid address is blocked.
 
-It's bases on some resources like [this one](http://mokagio.github.io/tech-journal/2014/11/21/regex-bitcoin.html) and [this one](https://stackoverflow.com/a/48643915) and mixed together on [Regex101](https://regex101.com/r/v0g6bv/1).
+It's bases on some resources like [this one](http://mokagio.github.io/tech-journal/2014/11/21/regex-bitcoin.html), [this one](https://stackoverflow.com/a/48643915) and mixed together on [Regex101](https://regex101.com/r/v0g6bv/1).
 
 It has no dependencies and it's a single-function package, check the `index.js` file to copy the code and avoid adding one more dependency if you want.

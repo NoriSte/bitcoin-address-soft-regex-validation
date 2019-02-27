@@ -1,6 +1,23 @@
-const isValidBitcoinAddress = require("./index");
+const {isValidBitcoinAddress, mainnetRegex, testnetRegex, mainnet, testnet} = require("./index");
 
 describe("Bitcoin address soft regex validation tests", () => {
+  describe("Exports", () => {
+    test("The isValidBitcoinAddress should be exported", () => {
+      expect(isValidBitcoinAddress).toBeDefined();
+    });
+    test("The mainnetRegex should be exported", () => {
+      expect(mainnetRegex).toBeDefined();
+    });
+    test("The testnetRegex should be exported", () => {
+      expect(testnetRegex).toBeDefined();
+    });
+    test("The mainnet should be exported", () => {
+      expect(mainnet).toBeDefined();
+    });
+    test("The testnet should be exported", () => {
+      expect(testnet).toBeDefined();
+    });
+  });
   describe("Valid addresses", () => {
     test.each([
       ["Base58", "1JDknRvZTi5XdhQB3cgvJ9R8aogUvfbYUB", "mainnet"],
@@ -11,7 +28,7 @@ describe("Bitcoin address soft regex validation tests", () => {
     ])(
       'The %s %s %s address should be considered valid',
       (encoding, address, network) => {
-        expect(isValidBitcoinAddress(address, network === "mainnet")).toBe(true);
+        expect(isValidBitcoinAddress(address)).toBe(network);
       },
     );
   });
@@ -22,7 +39,7 @@ describe("Bitcoin address soft regex validation tests", () => {
     ])(
       'The %s %s address should be considered valid even if it isn\'t',
       (address, network) => {
-        expect(isValidBitcoinAddress(address, network === "mainnet")).toBe(true);
+        expect(isValidBitcoinAddress(address)).toBe(network);
       },
     );
   });
@@ -41,8 +58,8 @@ describe("Bitcoin address soft regex validation tests", () => {
     ])(
       'The %s address shouldn\'t be considered valid',
       (address,) => {
-        expect(isValidBitcoinAddress(address)).toBe(false);
-        expect(isValidBitcoinAddress(address, false)).toBe(false);
+        expect(isValidBitcoinAddress(address)).toBeUndefined();
+        expect(isValidBitcoinAddress(address)).toBeUndefined();
       },
     );
   });
