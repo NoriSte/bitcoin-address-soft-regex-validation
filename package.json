@@ -6,15 +6,12 @@
   "repository": "https://github.com/NoriSte/bitcoin-address-soft-regex-validation.git",
   "author": "Stefano Magni <nori.ste.magni@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "jest": "^24.1.0"
-  },
+  "dependencies": {},
   "scripts": {
-    "test": "jest",
-    "prepublish": "npm run build",
-    "build": "npx typescript --module \"commonjs\" index.ts"
+    "test": "jest"
   },
   "devDependencies": {
-    "coveralls": "^3.0.3"
+    "coveralls": "^3.0.3",
+    "jest": "^24.1.0"
   }
 }
