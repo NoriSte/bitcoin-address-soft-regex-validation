@@ -1,4 +1,5 @@
 # bitcoin-address-soft-regex-validation
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 [![TypeScript](https://badges.frapsoft.com/typescript/love/typescript.svg?v=101)](https://github.com/ellerbrock/typescript-badges/)
 [![Build Status](https://travis-ci.com/NoriSte/bitcoin-address-soft-regex-validation.svg?branch=master)](https://travis-ci.com/NoriSte/bitcoin-address-soft-regex-validation)
@@ -26,3 +27,15 @@ It's bases on some resources like [this one](http://mokagio.github.io/tech-journ
 It has no dependencies and it's a single-function package, check the `index.js` file to copy the code and avoid adding one more dependency if you want.
 
 Last but not least: it's written in TypeScript.
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table><tr><td align="center"><a href="https://twitter.com/NoriSte"><img src="https://avatars0.githubusercontent.com/u/173663?v=4" width="100px;" alt="Stefano Magni"/><br /><sub><b>Stefano Magni</b></sub></a><br /><a href="https://github.com/NoriSte/bitcoin-address-soft-regex-validation/commits?author=NoriSte" title="Code">💻</a> <a href="https://github.com/NoriSte/bitcoin-address-soft-regex-validation/commits?author=NoriSte" title="Tests">⚠️</a></td></tr></table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
