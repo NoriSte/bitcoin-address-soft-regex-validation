@@ -1,6 +1,7 @@
 # bitcoin-address-soft-regex-validation
 
 [![TypeScript](https://badges.frapsoft.com/typescript/love/typescript.svg?v=101)](https://github.com/ellerbrock/typescript-badges/)
+[![Build Status](https://travis-ci.com/NoriSte/bitcoin-address-soft-regex-validation.svg?branch=master)](https://travis-ci.com/NoriSte/bitcoin-address-soft-regex-validation)
 [![Coverage Status](https://coveralls.io/repos/github/NoriSte/bitcoin-address-soft-regex-validation/badge.svg?branch=master)](https://coveralls.io/github/NoriSte/bitcoin-address-soft-regex-validation?branch=master)
 
 Performs a soft (syntactically-only) validation of Bitcoin address (both Base58 and Bech32, both Mainnet and Testnet). It takes for granted that you have a stronger (maybe server side) Checksum validation.
