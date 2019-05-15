@@ -45,7 +45,7 @@ describe("Bitcoin address soft regex validation tests", () => {
   });
   describe("True negatives", () => {
     test.each([
-      // checsum invalid address found here https://github.com/bitpay/bitcore/issues/402
+      // checksum invalid address found here https://github.com/bitpay/bitcore/issues/402
       ["6JDknRvZTi5XdhQB3cgvJ9R8aogUvfbYUB"],
       ["bc2qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq"],
       ["4NCLmdnrxQErmJJPmGaSaE7NxuYKMNnYcxW"],
@@ -58,7 +58,6 @@ describe("Bitcoin address soft regex validation tests", () => {
     ])(
       'The %s address shouldn\'t be considered valid',
       (address,) => {
-        expect(isValidBitcoinAddress(address)).toBeUndefined();
         expect(isValidBitcoinAddress(address)).toBeUndefined();
       },
     );
