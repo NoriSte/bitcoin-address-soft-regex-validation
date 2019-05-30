@@ -1,6 +1,6 @@
 {
   "name": "bitcoin-address-soft-regex-validation",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "A single-function package to performa soft (no checksum) bitcoin address (Base58 and Bech32) validation",
   "main": "index.js",
   "types": "index.d.ts",
