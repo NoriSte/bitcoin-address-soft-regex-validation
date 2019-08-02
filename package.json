@@ -9,7 +9,7 @@
   "license": "MIT",
   "dependencies": {},
   "scripts": {
-    "test": "jest"
+    "test": "jest && npx stryker run"
   },
   "devDependencies": {
     "@stryker-mutator/core": "^2.0.2",
