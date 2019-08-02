@@ -7,6 +7,9 @@ jobs:
     node_js: node
     script: jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
       && rm -rf ./coverage
+  - stage: Stryker
+    node_js: node
+    script: test
 env:
   global:
     secure: iIYShjpHubPZUUbNWkLtpqFDjNDsFA1qcCuWBelmTLljErhmH9IUWl/vaJs/hDz4GMGhEVNQd/dXE37uS4Ny0ivBKuAdL12qHXZ1S3QP7bLvtjed0cvvzhufcGroEheGVBx/qxjd2hTr0YhbBngj692AQkSPhCibqR7LfNQbgfuneOk0sO71N0nwzuOpOs34AUXJ76tMm4039I9uhUsJ8Cbi565B4AMDAVKTPegQPF1K30xzf4TCHkK5ZURckqxlduqf0FR2HjXEbfBsAMFBAX/QGWZ9G3EO59YfS+/mgispsCqT7jTWwSX76qhjshuJocSkjncxOnbD3Dm8BO+QWHiOMH3kvsFYfmvAg3W6Hivy8QKImyQ9Zk0LoV/GPETyreOam2jlJOQgiykO7OpbEcTwfXCDteM/SrGoRjrvlK/Uv0USg/lUPs5xCoNLwpp4V8+SjvQmGx/oNb8382cgMDKQgshsL4uI7nNhs7SmA3VWoLq5/VYeFcmUTffTo1HyVumOjpWgioeAjWIyo5PV1t3f3/zCIf2oREc3vClEcPC/cvgHCJBqCv2yu9Bu5zG6EmHPPuIj39wQ+A6vrZ4B33supvRljVlyH5QETA8F7tTPusWQmO4HSqiWQJ2qA7nCarpV/PRCtjgtO9j+inb28w+t4LvGVDSFOAm4XBVRvhE=
