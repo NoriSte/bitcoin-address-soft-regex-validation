@@ -1,0 +1,50 @@
+08:54:02 (11863) INFO ConfigReader Using stryker.conf.js in the current working directory.
+08:54:03 (11863) DEBUG BroadcastReporter Broadcasting to reporters ["html","clear-text","progress","dashboard"]
+08:54:02 (11863) DEBUG ConfigReader Loading config stryker.conf.js
+08:54:03 (11863) WARN InputFileResolver Globbing expression "js" did not result in any files.
+08:54:02 (11863) DEBUG PluginLoader Loading @stryker-mutator/* from /Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/node_modules/@stryker-mutator
+08:54:02 (11863) DEBUG PluginLoader Loading plugin "/Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/node_modules/@stryker-mutator/html-reporter" (matched with expression @stryker-mutator/*)
+08:54:02 (11863) DEBUG PluginLoader Loading plugin "/Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+08:54:02 (11863) DEBUG PluginLoader Loading plugin "/Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+08:54:02 (11863) DEBUG PluginLoader Loading plugins /Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/node_modules/@stryker-mutator/html-reporter
+08:54:02 (11863) DEBUG PluginLoader Loading plugins /Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/node_modules/@stryker-mutator/javascript-mutator
+08:54:03 (11863) DEBUG PluginLoader Loading plugins /Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/node_modules/@stryker-mutator/jest-runner
+08:54:03 (11863) DEBUG PluginLoader Loading plugins /Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/node_modules/@stryker-mutator/core/src/reporters/index.js
+08:54:03 (11863) WARN InputFileResolver No files marked to be mutated, Stryker will perform a dry-run without actually mutating anything. You can configure the `mutate` property in your stryker.conf.js file (or use `--mutate` via command line).
+08:54:03 (11863) DEBUG InputFileResolver All input files: [
+  "/Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/.vscode/settings.json",
+  "/Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/stryker.conf.js",
+  "/Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/stryker.log",
+  "/Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/.all-contributorsrc",
+  "/Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/.gitignore",
+  "/Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/.travis.yml",
+  "/Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/README.md",
+  "/Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/index.d.ts",
+  "/Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/index.js",
+  "/Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/index.test.js",
+  "/Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/package.json",
+  "/Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/yarn.lock"
+]
+08:54:03 (11863) DEBUG InputFileResolver Files to mutate: []
+08:54:03 (11863) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+08:54:03 (11863) INFO InitialTestExecutor Starting initial test run. This may take a while.
+08:54:03 (11863) DEBUG Sandbox Creating a sandbox for files in /Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/.stryker-tmp/sandbox7543159
+08:54:03 (11863) DEBUG Sandbox Creating test runner 0
+08:54:03 (11863) DEBUG ChildProcessProxy Starting /Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 11865
+08:54:03 (11865) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/.stryker-tmp/sandbox7543159
+08:54:03 (11865) DEBUG PluginLoader Loading @stryker-mutator/* from /Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/node_modules/@stryker-mutator
+08:54:03 (11865) DEBUG PluginLoader Loading plugin "/Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/node_modules/@stryker-mutator/html-reporter" (matched with expression @stryker-mutator/*)
+08:54:03 (11865) DEBUG PluginLoader Loading plugin "/Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+08:54:03 (11865) DEBUG PluginLoader Loading plugin "/Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+08:54:03 (11865) DEBUG PluginLoader Loading plugins /Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/node_modules/@stryker-mutator/html-reporter
+08:54:03 (11865) DEBUG PluginLoader Loading plugins /Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/node_modules/@stryker-mutator/javascript-mutator
+08:54:03 (11865) DEBUG PluginLoader Loading plugins /Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/node_modules/@stryker-mutator/jest-runner
+08:54:03 (11865) DEBUG PluginLoader Loading plugins /Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/node_modules/@stryker-mutator/core/src/reporters/index.js
+08:54:03 (11865) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+08:54:03 (11865) DEBUG JestTestRunner Project root is /Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/.stryker-tmp/sandbox7543159
+08:54:03 (11863) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+08:54:03 (11865) TRACE JestPromiseTestAdapter Invoking Jest with config {"collectCoverage":false,"verbose":false,"bail":false,"notify":false,"rootDir":"/Users/noriste/Sites/noriste/bitcoin-address-soft-regex-validation/.stryker-tmp/sandbox7543159","reporters":[]}
+08:54:05 (11863) DEBUG ChildProcessProxy Disposing of worker process 11865
+08:54:05 (11863) DEBUG ChildProcessProxy Kill 11865
+08:54:05 (11863) INFO InitialTestExecutor Initial test run succeeded. Ran 20 tests in 2 seconds (net 14 ms, overhead 1554 ms).
+08:54:05 (11863) INFO MutatorFacade It's a mutant-free world, nothing to test.
