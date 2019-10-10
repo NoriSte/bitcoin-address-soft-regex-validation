@@ -16,7 +16,7 @@
     "@stryker-mutator/html-reporter": "2.1.0",
     "@stryker-mutator/javascript-mutator": "2.1.0",
     "@stryker-mutator/jest-runner": "2.1.0",
-    "coveralls": "3.0.6",
+    "coveralls": "3.0.7",
     "jest": "24.9.0"
   }
 }
