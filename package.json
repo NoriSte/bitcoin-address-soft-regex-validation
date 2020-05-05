@@ -17,6 +17,6 @@
     "@stryker-mutator/javascript-mutator": "3.1.0",
     "@stryker-mutator/jest-runner": "3.1.0",
     "coveralls": "3.1.0",
-    "jest": "26.0.0"
+    "jest": "26.0.1"
   }
 }
